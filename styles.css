@@ -129,3 +129,13 @@
     opacity: .5;
 }
 
+.atto_styles a:before {
+    content: '<a href="' attr(href) '">';
+    opacity: .5;
+}
+
+.atto_styles a:after {
+    content: "</a>";
+    opacity: .5;
+}
+
