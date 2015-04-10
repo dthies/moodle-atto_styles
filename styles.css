@@ -1,0 +1,131 @@
+.atto_styles p:after {
+    color: blue;
+    content: "\00B6"
+}
+
+.atto_styles div.editor-indent:before {
+    content: "\2192";
+    color: blue;
+    position: absolute;
+    left: -2em;
+}
+
+.atto_styles div.editor-indent {
+    position: relative;
+}
+
+.atto_styles span[class]:before {
+    content: '<span class="' attr(class) '">';
+    opacity: .5;
+}
+
+.atto_styles span[class]:after {
+    content: "</span>";
+    opacity: .5;
+}
+
+.atto_styles span[style]:before {
+    content: '<span style="' attr(style) '">';
+    opacity: .5;
+}
+
+.atto_styles span[style]:after {
+    content: "</span>";
+    opacity: .5;
+}
+
+.atto_styles h3:before {
+    content: "<h3>";
+    color: yellow;
+}
+
+.atto_styles h4:before {
+    content: "<h4>";
+    color: yellow;
+}
+
+.atto_styles h5:before {
+    content: "<h5>";
+    color: yellow;
+}
+
+.atto_styles sub:before {
+    content: "<sub>";
+    opacity: .5;
+}
+
+.atto_styles sub:after {
+    content: "</sub>";
+    opacity: .5;
+}
+
+.atto_styles sup:before {
+    content: "<sup>";
+    opacity: .5;
+}
+
+.atto_styles sup:after {
+    content: "</sup>";
+    opacity: .5;
+}
+
+.atto_styles u:before {
+    content: "<u>";
+    opacity: .5;
+}
+
+.atto_styles u:after {
+    content: "</u>";
+    opacity: .5;
+}
+
+.atto_styles strike:before {
+    content: "<strike>";
+    opacity: .5;
+}
+
+.atto_styles strike:after {
+    content: "</strike>";
+    opacity: .5;
+}
+
+.atto_styles em:before {
+    content: "<em>";
+    opacity: .5;
+}
+
+.atto_styles em:after {
+    content: "</em>";
+    opacity: .5;
+}
+
+.atto_styles i:before {
+    content: "<i>";
+    opacity: .5;
+}
+
+.atto_styles i:after {
+    content: "</i>";
+    opacity: .5;
+}
+
+.atto_styles b:before {
+    content: "<b>";
+    opacity: .5;
+}
+
+.atto_styles b:after {
+    content: "</b>";
+    opacity: .5;
+}
+
+.atto_styles strong:before {
+    content: "<strong>";
+    opacity: .5;
+}
+
+.atto_styles strong:after {
+    content: "</strong>";
+    opacity: .5;
+}
+
