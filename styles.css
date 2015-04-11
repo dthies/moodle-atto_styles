@@ -139,3 +139,19 @@
     opacity: .5;
 }
 
+.atto_styles p[style],
+.atto_styles blockquote[style] {
+    position: relative;
+}
+
+.atto_styles p[style]:hover:before,
+.atto_styles blockquote[style]:hover:before {
+    content: 'blockquote style="' attr(style) '"';
+    background-color: white;
+    color: salmon;
+    position: absolute;
+    top: -2em;
+}
+.atto_styles p[style]:hover:before {
+    content: 'p style="' attr(style) '"';
+}
