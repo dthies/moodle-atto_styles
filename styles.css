@@ -14,22 +14,27 @@
     position: relative;
 }
 
-.atto_styles span[class]:before {
+.atto_styles span:not([class]):not([style]):before {
+    content: '<span>';
+    opacity: .5;
+}
+
+.atto_styles span[class]:not([style]):before {
     content: '<span class="' attr(class) '">';
     opacity: .5;
 }
 
-.atto_styles span[class]:after {
-    content: "</span>";
-    opacity: .5;
-}
-
-.atto_styles span[style]:before {
+.atto_styles span[style]:not([class]):before {
     content: '<span style="' attr(style) '">';
     opacity: .5;
 }
 
-.atto_styles span[style]:after {
+.atto_styles span[style][class]:before {
+    content: '<span style="' attr(style) 'class="' attr(class) '">';
+    opacity: .5;
+}
+
+.atto_styles span:after {
     content: "</span>";
     opacity: .5;
 }
@@ -146,12 +151,13 @@
 
 .atto_styles p[style]:hover:before,
 .atto_styles blockquote[style]:hover:before {
-    content: 'blockquote style="' attr(style) '"';
     background-color: white;
     color: salmon;
-    position: absolute;
     top: -2em;
 }
 .atto_styles p[style]:hover:before {
-    content: 'p style="' attr(style) '"';
+    content: '<p style="' attr(style) '">';
+}
+.atto_styles blockquote[style]:hover:before {
+    content: '<blockquote style="' attr(style) '>"';
 }
